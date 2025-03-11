@@ -36,17 +36,17 @@ A full-stack **Quiz Application** built with **Angular (frontend)** and **Spring
 ## **📸 Screenshots**  
 
 **🏠 Home Page (Quiz List)**  
-(![Screenshot 2025-03-11 124836](https://github.com/user-attachments/assets/f8fdec2a-c731-4ec4-848a-e0ca35d6e6a3)
+![Screenshot 2025-03-11 124836](https://github.com/user-attachments/assets/f8fdec2a-c731-4ec4-848a-e0ca35d6e6a3)
  
 
 **📝 Quiz Attempt**  
-(![Screenshot 2025-03-11 125257](https://github.com/user-attachments/assets/92b3b738-f20b-47f4-8327-0ec5a0d06877)
+![Screenshot 2025-03-11 125257](https://github.com/user-attachments/assets/92b3b738-f20b-47f4-8327-0ec5a0d06877)
 
 **Create Quiz**
-(![Screenshot 2025-03-11 125342](https://github.com/user-attachments/assets/bf14ab52-4be1-458f-b976-3f853541c2df)
+![Screenshot 2025-03-11 125342](https://github.com/user-attachments/assets/bf14ab52-4be1-458f-b976-3f853541c2df)
 
 **📊 Results Page**  
-(![Screenshot 2025-03-11 125306](https://github.com/user-attachments/assets/e945e1b3-d6e5-4b3a-8e72-9f77cd38c0fe)
+![Screenshot 2025-03-11 125306](https://github.com/user-attachments/assets/e945e1b3-d6e5-4b3a-8e72-9f77cd38c0fe)
 
 ---
 
