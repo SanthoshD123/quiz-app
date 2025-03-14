@@ -4,12 +4,13 @@ A full-stack **Quiz Application** built with **Angular (frontend)** and **Spring
 
 ## **📌 Features**  
 
-✅ **Secure authentication** - using usernames & hashed passwords.
 ✅ **Take Quizzes** – Users can attempt quizzes and submit answers.  
 ✅ **View Results** – See scores with a visual performance summary.  
 ✅ **Create Quizzes** – Add new quizzes with questions dynamically.  
 ✅ **REST API Integration** – Communicates with a Spring Boot backend.  
 ✅ **Modular & Scalable** – Clean architecture with reusable components.  
+✅ **Role-based access control (Admins & Users).**
+✅ **Secure authentication** - using usernames & hashed passwords.
 
 ---
 
