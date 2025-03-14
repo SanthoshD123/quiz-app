@@ -10,17 +10,18 @@ A full-stack **Quiz Application** built with **Angular (frontend)** and **Spring
 ✅ **REST API Integration** – Communicates with a Spring Boot backend.  
 ✅ **Modular & Scalable** – Clean architecture with reusable components.  
 ✅ **Role-based access control (Admins & Users).**
-✅ **Secure authentication** - using usernames & hashed passwords.
+✅ **Secure authentication** – using usernames & hashed passwords.
 
 ---
 
 ## **🚀 How It Works**  
 
-1️⃣ **Landing Page:** Shows all available quizzes (fetched from the backend).  
-2️⃣ **Quiz Attempt:** Users select a quiz and answer multiple-choice questions.  
-3️⃣ **Submission:** Answers are sent to the backend for evaluation.  
-4️⃣ **Result Page:** Displays scores with a visual breakdown.  
-5️⃣ **Quiz Creation:** Admins can add new quizzes dynamically.  
+1️⃣ **User Authentication** - Users must log in to access quizzes; admins can manage quizzes.
+2️⃣ **Landing Page** - Displays available quizzes for logged-in users.
+3️⃣ **Quiz Attempt** - Users select a quiz and answer multiple-choice questions.
+4️⃣ **Submission** - Answers are sent to the backend for evaluation.
+5️⃣ **Result Page** - Displays scores with a visual breakdown.
+6️⃣ **Quiz Creation** - Admins can add, edit, or delete quizzes dynamically.
 
 ---
 
@@ -93,12 +94,16 @@ A full-stack **Quiz Application** built with **Angular (frontend)** and **Spring
 
 ## **📌 API Endpoints**  
 
-| Method | Endpoint                 | Description                 |
-|--------|--------------------------|-----------------------------|
-| GET    | `/quizzes`               | Fetch all quizzes          |
-| GET    | `/quizzes/{id}`          | Get a quiz by ID           |
-| POST   | `/quizzes`               | Create a new quiz          |
-| POST   | `/quizzes/{id}/submit`   | Submit answers & get score |
+| Method | Endpoint                  | Description                           | Access |
+|--------|---------------------------|---------------------------------------|--------|
+| **POST**  | `/auth/register`       | Register a new user                   | Public |
+| **POST**  | `/auth/login`          | Authenticate user & return token      | Public |
+| **GET**   | `/quizzes`             | Fetch all quizzes                     | User/Admin |
+| **GET**   | `/quizzes/{id}`        | Get a quiz by ID                      | User/Admin |
+| **POST**  | `/quizzes`             | Create a new quiz                     | Admin Only |
+| **POST**  | `/quizzes/{id}/submit` | Submit answers & get score            | User |
+| **GET**   | `/admin/users`         | Fetch all users                       | Admin Only |
+| **DELETE**| `/admin/users/{id}`    | Delete a user                         | Admin Only |
 
 ---
 
