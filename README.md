@@ -48,6 +48,13 @@ A full-stack **Quiz Application** built with **Angular (frontend)** and **Spring
 **📊 Results Page**  
 ![Screenshot 2025-03-11 125306](https://github.com/user-attachments/assets/e945e1b3-d6e5-4b3a-8e72-9f77cd38c0fe)
 
+**Admin Module""
+![Screenshot 2025-03-14 145511](https://github.com/user-attachments/assets/c2acf91d-9b47-4855-bc94-abd7c8578886)
+
+**Authentication**
+![Screenshot 2025-03-14 145524](https://github.com/user-attachments/assets/2b58c6c7-838e-4379-9c96-b6e884f5446a)
+
+
 ---
 
 ## **⚙️ Setup & Installation**  
