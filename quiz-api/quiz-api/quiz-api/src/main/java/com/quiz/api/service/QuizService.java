@@ -44,6 +44,11 @@ public class QuizService {
         return quizRepository.findById(quizId)
                 .orElseThrow(() -> new RuntimeException("Quiz not found"));
     }
+    
+ // Add to QuizService class
+    public void deleteQuiz(Long quizId) {
+        quizRepository.deleteById(quizId);
+    }
 
     // ✅ Submit quiz answers and calculate score
     public int submitQuiz(Long quizId, Map<Long, String> answers) {
