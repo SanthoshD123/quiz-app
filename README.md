@@ -2,26 +2,27 @@
 
 A full-stack **Quiz Application** built with **Angular (frontend)** and **Spring Boot (backend)**. Users can take quizzes, view scores, and create new quizzes with a simple and interactive interface.  
 
-## **📌 Features**  
+## 📌 Features
 
-✅ **Take Quizzes** – Users can attempt quizzes and submit answers.  
-✅ **View Results** – See scores with a visual performance summary.  
-✅ **Create Quizzes** – Add new quizzes with questions dynamically.  
-✅ **REST API Integration** – Communicates with a Spring Boot backend.  
-✅ **Modular & Scalable** – Clean architecture with reusable components.  
-✅ **Role-based access control (Admins & Users).**
-✅ **Secure authentication** – using usernames & hashed passwords.
+- ✅ **Take Quizzes** – Users can attempt quizzes and submit answers.
+- ✅ **View Results** – See scores with a visual performance summary.
+- ✅ **Create Quizzes** – Add new quizzes with questions dynamically.
+- ✅ **REST API Integration** – Communicates with a Spring Boot backend.
+- ✅ **Modular & Scalable** – Clean architecture with reusable components.
+- ✅ **Role-based access control (Admins & Users)**
+- ✅ **Secure authentication** using usernames & hashed passwords.
 
 ---
 
-## **🚀 How It Works**  
+## 🚀 How It Works
 
-1️⃣ **User Authentication** - Users must log in to access quizzes; admins can manage quizzes.
-2️⃣ **Landing Page** - Displays available quizzes for logged-in users.
-3️⃣ **Quiz Attempt** - Users select a quiz and answer multiple-choice questions.
-4️⃣ **Submission** - Answers are sent to the backend for evaluation.
-5️⃣ **Result Page** - Displays scores with a visual breakdown.
-6️⃣ **Quiz Creation** - Admins can add, edit, or delete quizzes dynamically.
+1️⃣ **User Authentication** – Users must log in to access quizzes; admins can manage quizzes.  
+2️⃣ **Landing Page** – Displays available quizzes for logged-in users.  
+3️⃣ **Quiz Attempt** – Users select a quiz and answer multiple-choice questions.  
+4️⃣ **Submission** – Answers are sent to the backend for evaluation.  
+5️⃣ **Result Page** – Displays scores with a visual breakdown.  
+6️⃣ **Quiz Creation** – Admins can add, edit, or delete quizzes dynamically.  
+
 
 ---
 
