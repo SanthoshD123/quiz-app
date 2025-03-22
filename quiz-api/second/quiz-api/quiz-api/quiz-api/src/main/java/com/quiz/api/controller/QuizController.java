@@ -42,12 +42,6 @@ public class QuizController {
     public Quiz getQuizById(@PathVariable Long quizId) {
         return quizService.getQuizById(quizId);
     }
-    
- // Add this to QuizController class
-    @PutMapping("/{quizId}")
-    public Quiz updateQuiz(@PathVariable Long quizId, @RequestBody Quiz quiz) {
-        return quizService.updateQuiz(quizId, quiz);
-    }
 
     // ✅ Submit answers for a quiz and get the score
     @PostMapping("/{quizId}/submit")

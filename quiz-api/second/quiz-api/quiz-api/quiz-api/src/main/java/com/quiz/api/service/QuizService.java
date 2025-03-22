@@ -28,18 +28,6 @@ public class QuizService {
     public Quiz createQuiz(Quiz quiz) {
         return quizRepository.save(quiz);
     }
-    
- // Add to QuizService class
-    public Quiz updateQuiz(Long quizId, Quiz updatedQuiz) {
-        Optional<Quiz> quizOptional = quizRepository.findById(quizId);
-        if (quizOptional.isPresent()) {
-            Quiz quiz = quizOptional.get();
-            quiz.setTitle(updatedQuiz.getTitle());
-            return quizRepository.save(quiz);
-        } else {
-            throw new RuntimeException("Quiz not found");
-        }
-    }
 
     public Question addQuestionToQuiz(Long quizId, Question question) {
         Optional<Quiz> quizOptional = quizRepository.findById(quizId);

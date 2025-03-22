@@ -5,12 +5,9 @@ import com.quiz.api.model.Quiz;
 import com.quiz.api.model.User;
 import com.quiz.api.service.QuizService;
 import com.quiz.api.service.UserService;
-
-
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
-
 
 @RestController
 @RequestMapping("/api/admin")
@@ -42,13 +39,6 @@ public class AdminController {
     public List<Quiz> getAllQuizzes() {
         return quizService.getAllQuizzes();
     }
-    
- // Add to AdminController class
-    @PutMapping("/quizzes/{quizId}")
-    public ResponseEntity<Quiz> updateQuiz(@PathVariable Long quizId, @RequestBody Quiz quiz) {
-        Quiz updatedQuiz = quizService.updateQuiz(quizId, quiz);
-        return ResponseEntity.ok(updatedQuiz);
-    }
 
     // Delete a quiz
     @DeleteMapping("/quizzes/{quizId}")
@@ -56,6 +46,4 @@ public class AdminController {
         quizService.deleteQuiz(quizId);
         return ResponseEntity.ok("Quiz deleted successfully");
     }
-    
-
 }

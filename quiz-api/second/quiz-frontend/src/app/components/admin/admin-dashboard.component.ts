@@ -1,3 +1,4 @@
+// src/app/components/admin/admin-dashboard.component.ts
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
@@ -71,7 +72,6 @@ import { AuthService } from '../../services/auth.service';
             <div class="card-header">
               <h4>Quiz Management</h4>
             </div>
-
             <div class="card-body">
               <div class="d-grid mb-3">
                 <a routerLink="/quizzes/create" class="btn btn-success">
@@ -114,12 +114,6 @@ import { AuthService } from '../../services/auth.service';
                             class="btn btn-sm btn-primary me-1"
                           >
                             <i class="bi bi-eye"></i>
-                          </a>
-                          <a
-                            [routerLink]="['/quizzes/edit', quiz.id]"
-                            class="btn btn-sm btn-warning me-1"
-                          >
-                            <i class="bi bi-pencil"></i>
                           </a>
                           <button
                             class="btn btn-sm btn-danger"

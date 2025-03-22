@@ -1,7 +1,7 @@
+// src/app/services/admin.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Quiz } from '../models/quiz.model';
 
 @Injectable({
   providedIn: 'root',
@@ -25,9 +25,5 @@ export class AdminService {
 
   deleteQuiz(quizId: number): Observable<any> {
     return this.http.delete(`${this.apiUrl}/quizzes/${quizId}`);
-  }
-
-  updateQuiz(quizId: number, quiz: Quiz): Observable<Quiz> {
-    return this.http.put<Quiz>(`${this.apiUrl}/quizzes/${quizId}`, quiz);
   }
 }

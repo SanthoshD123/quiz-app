@@ -1,7 +1,7 @@
 // src/app/app.routes.ts (updated)
 import { Routes } from '@angular/router';
 import { AuthGuard, AdminGuard } from './guards/auth.guard';
-import { QuizEditComponent } from './components/quiz-edit/quiz-edit.component';
+
 export const routes: Routes = [
   { path: '', redirectTo: '/quizzes', pathMatch: 'full' },
   {
@@ -33,11 +33,6 @@ export const routes: Routes = [
         (m) => m.QuizCreateComponent
       ),
     canActivate: [AdminGuard],
-  },
-  {
-    path: 'quizzes/edit/:id',
-    component: QuizEditComponent,
-    canActivate: [AuthGuard, AdminGuard],
   },
   {
     path: 'quizzes/:id',

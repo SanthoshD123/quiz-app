@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Quiz } from '../models/quiz.model';
-import { Question } from '../models/question.model';
+import { Question } from '../models/question.model'; // ✅ Import Question model
 
 @Injectable({
   providedIn: 'root',
@@ -32,21 +32,16 @@ export class QuizService {
     });
   }
 
-  // Create a new quiz
+  // ✅ Create a new quiz
   createQuiz(quiz: Quiz): Observable<Quiz> {
     return this.http.post<Quiz>(this.apiUrl, quiz);
   }
 
-  // Add a question to a quiz
+  // ✅ Add a question to a quiz
   addQuestionToQuiz(quizId: number, question: Question): Observable<Question> {
     return this.http.post<Question>(
       `${this.apiUrl}/${quizId}/questions`,
       question
     );
-  }
-
-  // Update a quiz
-  updateQuiz(quizId: number, quiz: Quiz): Observable<Quiz> {
-    return this.http.put<Quiz>(`${this.apiUrl}/${quizId}`, quiz);
   }
 }
