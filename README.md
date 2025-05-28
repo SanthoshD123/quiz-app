@@ -32,8 +32,7 @@ A full-stack **Quiz Application** built with **Angular (frontend)** and **Spring
 |--------------|------------|
 | **Frontend**  | Angular, TypeScript, Bootstrap |
 | **Backend**   | Spring Boot, Java, REST API   |
-| **Database**  | MySQL (or H2 for testing) |
-| **Hosting**   | Can be deployed on Netlify & Railway |
+| **Database**  | MySQL |
 
 ---
 
